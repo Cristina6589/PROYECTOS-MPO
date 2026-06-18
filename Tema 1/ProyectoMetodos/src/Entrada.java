@@ -1,10 +1,15 @@
 public class Entrada {
+
     public static void main(String[] args) {
-        System.out.println("Ejecución de métodos");
+        System.out.println("Ejecución de métodos\n");
         saludar("Cristina");
-        saludar("Mariana");
-        saludar("Imperio");
+
+        Operaciones operacionesMatematicas = new Operaciones();
+        operacionesMatematicas.sumar(4,5);
+        operacionesMatematicas.restar(9,3);
+
         despedir();
+
     }
 
     public static void saludar(String data){
@@ -12,7 +17,7 @@ public class Entrada {
         System.out.println("Buenos días");
         System.out.println("¿Qué tal estás?");
         System.out.println("¿Quieres un café?");
-        System.out.println("Este método se va a repetir en el saludo");
+        System.out.println("Hoy vamos a realizar operaciones");
     }
 
     public static void despedir(){
