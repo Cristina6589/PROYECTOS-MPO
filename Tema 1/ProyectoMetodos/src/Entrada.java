@@ -7,6 +7,8 @@ public class Entrada {
         Operaciones operacionesMatematicas = new Operaciones();
         operacionesMatematicas.sumar(4,5);
         operacionesMatematicas.restar(9,3);
+        operacionesMatematicas.multiplicacion(5,6);
+        System.out.println("¿El número es válido? "+operacionesMatematicas.validarNumero(114));
 
         despedir();
 
