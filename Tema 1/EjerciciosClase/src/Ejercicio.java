@@ -28,12 +28,37 @@ public class Ejercicio {
         System.out.println("¿Cuántas personas han realizado la compra? ");
         int numeroPersonas = lectorTeclado.nextInt();
     // 3 -> Realizar cálculos
-        
+        double costeBocadillos = bocadillos * precioBocadillo;
+        double costeBebidas = bebidas * precioBebida;
+        double costeTotal = costeBocadillos + costeBebidas;
+        double precioPersona = costeTotal/numeroPersonas;
     // 4 -> Mostrar información
-
+        System.out.printf("El precio total de la compra es: %.2f%n",costeTotal);
+        System.out.printf("El precio total de los bocadillos es: %.2f%n",costeBocadillos);
+        System.out.printf("El precio total de las bebidas es: %.2f%n",costeBebidas);
+        System.out.printf("El precio a pagar por persona es: %.2f%n",precioPersona);
 
         lectorTeclado.close();
+    }
 
+    public void ejercicio4(){
+        //Hágase un programa que convierta segundos en horas, minutos y segundos.
+        // 1-> pedir datos
+        lectorTeclado = new Scanner(System.in);
+        System.out.println("¿Cuántos segundos quieres pasar a tiempo? ");
+        int segundos = lectorTeclado.nextInt();
+        // 2-> realizar cálculos
+        // segundos en horas-> 3600
+        // minutos en horas -> 60
+        // segundos en minutos -> 60
+        int horas = segundos/3600;
+        int minutos = (segundos%3600)/60;
+        int seg = segundos%60;
 
+        // 3-> mostrar datos
+        System.out.println("El número de horas es: "+horas);
+        System.out.println("El número de minutos es: "+minutos);
+        System.out.println("El número de segundos es: "+seg);
+        lectorTeclado.close();
     }
 }
