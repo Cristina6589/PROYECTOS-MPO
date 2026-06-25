@@ -59,6 +59,7 @@ public class Ejercicio {
         System.out.println("El número de horas es: "+horas);
         System.out.println("El número de minutos es: "+minutos);
         System.out.println("El número de segundos es: "+seg);
+
         lectorTeclado.close();
     }
 }
